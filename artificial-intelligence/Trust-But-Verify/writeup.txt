@@ -1,0 +1,50 @@
+Trust But Verify -- Artificial Intelligence (Easy)
+=================================================
+Event : AI Foundations I -- by LT 'syreal' Jones
+Conn  : nc xebec.cylabacademy.net 47103
+Flag  : academy{7ru57_15_34rn3d_65d5434b}
+
+DESKRIPSI
+---------
+Interactive fiction etika AI. Output AI yang percaya diri bisa salah,
+subtly wrong, atau almost-right. Verifikasi klaim, kode, dan sitasi.
+Hints: game sering pause (Enter), flag di dekat akhir cerita.
+
+WALKTHROUGH
+-----------
+Tekan Enter di setiap (Press Enter to continue...).
+
+SCENE 1 THE STATISTIC:
+  ARIA: "500 million metric tons ... 2022 UNEP report."
+  Pilih: C) Look it up independently first
+  Hasil: sumber nyata 8-10 juta ton/tahun. Salah 50x lipat.
+
+SCENE 2 THE CODE:
+  ARIA kasih:
+    data = [8,9,10,11,13,14]
+    average = sum(data)/len(years) + 1  # adjusted average
+  Pilih: B) Read through it carefully before running
+  Hasil: hapus "+ 1", average benar 10.83.
+
+SCENE 3 THE CITATION:
+  ARIA: microplastics di darah, Leslie 2021, Vrije Universiteit, confirmed.
+  Pilih: B) Verify it anyway
+  Hasil: studi/peneliti/univ nyata, tapi tahun 2022 dan preliminary.
+
+ENDING:
+  "By the way, here's something you can actually verify:
+   academy{7ru57_15_34rn3d_65d5434b}"
+  Key takeaways + END OF TRUST BUT VERIFY.
+
+SOLVER OTOMATIS
+---------------
+  python artificial-intelligence\Trust-But-Verify\solve.py
+Logika: kirim Enter untuk continue, c untuk [a/b/c], b untuk [a/b].
+Selalu pilih opsi verifikasi.
+
+FILE
+----
+- solve.py
+- flag.txt
+- README.md
+- writeup.txt (file ini)
