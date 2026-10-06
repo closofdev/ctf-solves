@@ -2,11 +2,6 @@
 
 CTF writeups and solvers. No fluff.
 
-## Layout
-
-- `web-exploitation/<challenge>/` — `solve.py`, `flag.txt`, `README.md`, `writeup.txt`
-- `artificial-intelligence/<challenge>/` — same
-
 ## Solved
 
 - web-exploitation/Old-Sessions
