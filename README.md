@@ -9,4 +9,4 @@ CTF writeups and solvers. No fluff.
 - web-exploitation/SSTI1
 - web-exploitation/ORDER-ORDER
 - web-exploitation/n0s4n1ty-1
-- artificial-intelligence/Trust-But-Verify
+- artificial-intelligence/Trust-But-Verify.
