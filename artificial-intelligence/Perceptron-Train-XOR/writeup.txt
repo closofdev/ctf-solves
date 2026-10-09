@@ -1,0 +1,33 @@
+Perceptron Train XOR -- Artificial Intelligence (Easy)
+=====================================================
+Event : AI Foundations I -- by LT 'syreal' Jones
+URL   : http://chatelaine.cylabacademy.net:10996/
+Flag  : academy{x0r_unl34rn4bl3_by_p3rc3ptr0ns_5307b2ae}
+
+SETUP
+-----
+GET /config.json -> XOR 4 titik: (-2,-2,0),(2,2,0),(-2,2,1),(2,-2,1).
+maxSteps 16, lr 0.02-20.0, threshold 0.75, init w=[1,-1] b=0 acc 0.25.
+Classic perceptron: hanya misclassified yang trigger update.
+
+STEP
+----
+POST /train {"learningRate": 0.5}
+-> accuracy 0.75 success true + flag.
+Sweep 0.02,0.05,0.1,0.2,0.5,1,2,5,10,20 semua 0.75 di instance ini.
+XOR tak linearly separable, 75% (3/4) adalah target maksimal.
+
+MANUAL
+------
+Buka URL di browser, slider default 0.02, klik Run training.
+
+SOLVER
+------
+  python artificial-intelligence\Perceptron-Train-XOR\solve.py
+
+FILE
+----
+- solve.py
+- flag.txt
+- README.md
+- writeup.txt (file ini)
