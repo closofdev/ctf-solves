@@ -1,0 +1,38 @@
+Perceptron Play Naught -- Artificial Intelligence (Easy)
+=======================================================
+Event : AI Foundations I -- by LT 'syreal' Jones
+Conn  : nc chatelaine.cylabacademy.net 20759
+Flag  : academy{n4ught_bu7_53p4r4b13_277a702d}
+
+SETUP
+-----
+REPL commands: SHOW, SET w1 w2 b, ADJUST dw1 dw2 db, POINTS, CHECK, RESET.
+Points (POINTS):
+  (-4,-1)->0  (-1,+2)->1  (0,-1)->0  (0,+2)->1
+  (2,-1)->0   (3,+1)->1   (4,+2)->1
+Class 0 semua y=-1, class 1 semua y>=1.
+Tak bisa dipisah cuma di x, tapi jadi linearly separable di 2D:
+batas horizontal y=0.
+
+STEP
+----
+Start w1=1 w2=-1 b=0 (banyak salah).
+  SET 0 1 0
+  CHECK
+activation = 0*x + 1*y + 0 = y.
+  class 0 (y=-1): -1 < 0 -> pred 0 benar
+  class 1 (y>=1): > 0 -> pred 1 benar
+Output:
+  Perfect! All points are classified correctly.
+  academy{n4ught_bu7_53p4r4b13_277a702d}
+
+SOLVER
+------
+  python artificial-intelligence\Perceptron-Play-Naught\solve.py
+
+FILE
+----
+- solve.py
+- flag.txt
+- README.md
+- writeup.txt (file ini)
