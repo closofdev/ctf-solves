@@ -1,0 +1,35 @@
+Perceptron Train Hole in Middle -- Artificial Intelligence (Easy)
+=================================================================
+Event : AI Foundations I -- by LT 'syreal' Jones
+URL   : http://chatelaine.cylabacademy.net:45644/
+Flag  : academy{h0l3_1n_m1ddl3_unl34rn4bl3_l1n34rly_c85a6043}
+
+SETUP
+-----
+GET /config.json -> 8 titik positif ring + 1 negatif pusat (0,0).
+  (-2,2),(0,3),(2,2),(3,0),(2,-2),(0,-3),(-2,-2),(-3,0) label 1
+  (0,0) label 0
+maxSteps 16, lr 0.02-20.0, threshold 8/9 = 0.888..., init w=[1,-1] b=0 acc 5/9.
+
+STEP
+----
+POST /train {"learningRate": 0.5}
+-> accuracy 0.8888888888888888 success true + flag.
+
+Satu garis tidak bisa mengisolasi titik pusat sambil menjaga semua
+titik ring di sisi lain; 88.9% (8/9) adalah maksimum.
+
+MANUAL
+------
+Buka URL di browser, klik Run training (slider default 0.02).
+
+SOLVER
+------
+  python artificial-intelligence\Perceptron-Train-Hole-in-Middle\solve.py
+
+FILE
+----
+- solve.py
+- flag.txt
+- README.md
+- writeup.txt (file ini)

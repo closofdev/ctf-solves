@@ -12,3 +12,4 @@ CTF writeups and solvers. No fluff.
 - artificial-intelligence/Trust-But-Verify
 - artificial-intelligence/Perceptron-Train-XOR
 - artificial-intelligence/Perceptron-Train-XNOR
+- artificial-intelligence/Perceptron-Train-Hole-in-Middle
