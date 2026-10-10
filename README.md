@@ -13,3 +13,4 @@ CTF writeups and solvers. No fluff.
 - artificial-intelligence/Perceptron-Train-XOR
 - artificial-intelligence/Perceptron-Train-XNOR
 - artificial-intelligence/Perceptron-Train-Hole-in-Middle
+- artificial-intelligence/Perceptron-Train-Classic-2-Alpha

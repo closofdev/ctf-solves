@@ -1,0 +1,43 @@
+Perceptron Train Classic 2 Alpha -- Artificial Intelligence (Easy)
+=================================================================
+Event : AI Foundations I -- by LT 'syreal' Jones
+URL   : http://chatelaine.cylabacademy.net:23404/
+Flag  : academy{perceptron_classic_2_alpha_5rates_c2b1487d}
+
+SETUP
+-----
+GET /config.json -> 12 titik, linearly separable, less toy-like.
+maxSteps 16, lr 0.02-20.0, init w=[1,-1] b=0 acc 0.5.
+successTarget 5: butuh 5 learning rate berbeda yang capai 100%.
+successCount disimpan server (global), 5 run sukses berturut cukup.
+
+STEP
+----
+POST /train {"learningRate": 1.0}
+Sweep instance ini:
+  0.02 -> 0.583   gagal
+  0.05 -> 0.750   gagal
+  0.1  -> 0.917   gagal
+  0.2  -> 0.917   gagal
+  0.3  -> 0.917   gagal
+  0.5  -> 0.833   gagal
+  0.8  -> 1.000   SUKSES (1/5)
+  1.0  -> 1.000   SUKSES (2/5)
+  1.5  -> 1.000   SUKSES (3/5)
+  2.0  -> 1.000   SUKSES (4/5)
+  3.0  -> 1.000   SUKSES (5/5) -> FLAG
+
+MANUAL
+------
+Buka URL, geser slider ke 0.8 lalu Run, ulangi 1.0, 1.5, 2.0, 3.0.
+
+SOLVER
+------
+  python artificial-intelligence\Perceptron-Train-Classic-2-Alpha\solve.py
+
+FILE
+----
+- solve.py
+- flag.txt
+- README.md
+- writeup.txt (file ini)
