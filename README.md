@@ -15,3 +15,4 @@ CTF writeups and solvers. No fluff.
 - artificial-intelligence/Perceptron-Train-Hole-in-Middle
 - artificial-intelligence/Perceptron-Train-Classic-2-Alpha
 - artificial-intelligence/Perceptron-Train-Classic-1
+- artificial-intelligence/Perceptron-Train-Classic-0

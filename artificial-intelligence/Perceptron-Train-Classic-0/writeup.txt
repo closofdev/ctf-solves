@@ -1,0 +1,34 @@
+Perceptron Train Classic 0 -- Artificial Intelligence (Easy)
+============================================================
+Event : AI Foundations I -- by LT 'syreal' Jones
+URL   : http://chatelaine.cylabacademy.net:22251/
+Flag  : academy{perceptron_classic_mode_3ddb3b37}
+
+SETUP
+-----
+GET /config.json -> dataset gentle, dua cluster well-separated:
+  negatif: (-4,-2),(-3,-4),(-2,-3),(-3,-1)
+  positif: (3,4),(4,2),(2,3),(3,1)
+maxSteps 16, lr 0.02-2.0 (lebih sempit), init w=[1,-1] b=0 acc 0.5.
+Hanya butuh SATU run 100% (mode dasar, bukan 5 rates).
+
+STEP
+----
+POST /train {"learningRate": 0.02}
+-> accuracy 1.0 success true + flag.
+Semua LR rendah-sedang langsung 100%.
+
+MANUAL
+------
+Buka URL, klik Run training (slider default 0.02).
+
+SOLVER
+------
+  python artificial-intelligence\Perceptron-Train-Classic-0\solve.py
+
+FILE
+----
+- solve.py
+- flag.txt
+- README.md
+- writeup.txt (file ini)
