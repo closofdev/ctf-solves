@@ -1,0 +1,32 @@
+Perceptron Train XNOR -- Artificial Intelligence (Easy)
+======================================================
+Event : AI Foundations I -- by LT 'syreal' Jones
+URL   : http://chatelaine.cylabacademy.net:45959/
+Flag  : academy{xn0r_unl34rn4bl3_by_p3rc3ptr0ns_da5e1216}
+
+SETUP
+-----
+GET /config.json -> XNOR 4 titik: (-2,-2,1),(2,2,1),(-2,2,0),(2,-2,0).
+maxSteps 16, lr 0.02-20.0, threshold 0.75, init w=[1,1] b=0 acc 0.25.
+Sama seperti XOR tapi label dibalik.
+
+STEP
+----
+POST /train {"learningRate": 0.5}
+-> accuracy 0.75 success true + flag.
+XNOR tak linearly separable, 75% (3/4) adalah maksimum.
+
+MANUAL
+------
+Buka URL di browser, klik Run training (slider default 0.02).
+
+SOLVER
+------
+  python artificial-intelligence\Perceptron-Train-XNOR\solve.py
+
+FILE
+----
+- solve.py
+- flag.txt
+- README.md
+- writeup.txt (file ini)

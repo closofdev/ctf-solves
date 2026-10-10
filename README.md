@@ -11,3 +11,4 @@ CTF writeups and solvers. No fluff.
 - web-exploitation/n0s4n1ty-1
 - artificial-intelligence/Trust-But-Verify
 - artificial-intelligence/Perceptron-Train-XOR
+- artificial-intelligence/Perceptron-Train-XNOR
