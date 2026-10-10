@@ -1,0 +1,37 @@
+Perceptron Play Alpha -- Artificial Intelligence (Easy)
+======================================================
+Event : AI Foundations I -- by LT 'syreal' Jones
+Conn  : nc chatelaine.cylabacademy.net 37297
+Flag  : academy{11n34r1y_53p4r4813_9938a80d}
+
+SETUP
+-----
+REPL commands: SHOW, SET w1 w2 b, ADJUST dw1 dw2 db, POINTS, CHECK, RESET.
+Points (POINTS):
+  class 0: (-3,-2) (-1,-1) (-4,-2)   [kiri-bawah]
+  class 1: (+3,+1) (+2,+2) (+1,+3)   [kanan-atas]
+Dua cluster terpisah diagonal.
+
+STEP
+----
+Start w1=1 w2=-1 b=0 (banyak salah).
+Boundary y = -x:
+  SET 1 1 0
+  CHECK
+activation = x + y.
+  class 0 (x+y < 0) -> pred 0 benar
+  class 1 (x+y > 0) -> pred 1 benar
+Output:
+  Perfect! All points are classified correctly.
+  academy{11n34r1y_53p4r4813_9938a80d}
+
+SOLVER
+------
+  python artificial-intelligence\Perceptron-Play-Alpha\solve.py
+
+FILE
+----
+- solve.py
+- flag.txt
+- README.md
+- writeup.txt (file ini)

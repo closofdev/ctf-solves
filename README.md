@@ -18,3 +18,4 @@ CTF writeups and solvers. No fluff.
 - artificial-intelligence/Perceptron-Train-Classic-0
 - artificial-intelligence/Perceptron-Train-3-Bit-Parity
 - artificial-intelligence/Perceptron-Play-Naught
+- artificial-intelligence/Perceptron-Play-Alpha
