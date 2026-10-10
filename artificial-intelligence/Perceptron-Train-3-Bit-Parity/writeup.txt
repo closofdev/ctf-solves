@@ -1,0 +1,38 @@
+Perceptron Train 3-Bit Parity -- Artificial Intelligence (Easy)
+==============================================================
+Event : AI Foundations I -- by LT 'syreal' Jones
+URL   : http://xebec.cylabacademy.net:29078/
+Flag  : academy{3b1t_p4r1ty_unl34rn4bl3_l1n34rly_5d1cd0f2}
+
+SETUP
+-----
+GET /config.json -> 3-bit parity, 8 titik di 3D (dimensions: 3).
+  (-2,-2,-2,0) (-2,-2,2,1) (-2,2,-2,1) (-2,2,2,0)
+  (2,-2,-2,1) (2,-2,2,0) (2,2,-2,0) (2,2,2,1)
+Label = parity (jumlah bit 1 ganjil -> 1).
+maxSteps 16, lr 0.02-20.0, threshold 0.75, init w=[1,1,1] b=0 acc 0.25.
+Parity tak linearly separable oleh satu bidang; 75% (6/8) maksimum.
+
+STEP
+----
+POST /train {"learningRate": 0.2}
+Sweep:
+  0.02 -> 0.25 gagal
+  0.05 -> 0.25 gagal
+  0.1  -> 0.25 gagal
+  0.2  -> 0.75 SUKSES -> FLAG
+
+MANUAL
+------
+Buka URL, geser slider ke 0.2, klik Run training.
+
+SOLVER
+------
+  python artificial-intelligence\Perceptron-Train-3-Bit-Parity\solve.py
+
+FILE
+----
+- solve.py
+- flag.txt
+- README.md
+- writeup.txt (file ini)
